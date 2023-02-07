@@ -5,6 +5,7 @@ import 'react-tabs/style/react-tabs.css';
 import './bootstrap.min.css';
 import CanvasToVideo from "./TabViews/CanvasToVideo/CanvasToVideo";
 import SvgToVideo from "./TabViews/SvgToVideo/SvgToVideo";
+import ConcatenateVideo from "./TabViews/ConcatenateVideo/ConcatenateVideo";
 
 function App() {
   const [tabIndex, setTabIndex] = useState(0);
@@ -14,6 +15,9 @@ function App() {
         <Tab>Image To Video</Tab>
         <Tab>Canvas to Video</Tab>
         <Tab>SVG to Video</Tab>
+        <Tab>
+          Concatenate Video
+        </Tab>
       </TabList>
 
       <TabPanel>
@@ -24,6 +28,9 @@ function App() {
       </TabPanel>
       <TabPanel>
         <SvgToVideo  />
+      </TabPanel>
+      <TabPanel>
+<ConcatenateVideo/>
       </TabPanel>
     </Tabs>
   );

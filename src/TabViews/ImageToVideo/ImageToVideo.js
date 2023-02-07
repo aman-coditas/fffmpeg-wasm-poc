@@ -45,7 +45,7 @@ function ImageToVideo() {
     setMessage("Loading data");
 
     // writing input image to FFMPEG worker
-    ffmpeg.FS("writeFile", `test.png`, await fetchFile(image));
+    ffmpeg.FS("writeFile", `test.png`, await fetchFile("https://png.pngitem.com/pimgs/s/185-1850014_free-sample-hd-png-download.png"));
 
     setMessage("Transcoding in progress...");
 
